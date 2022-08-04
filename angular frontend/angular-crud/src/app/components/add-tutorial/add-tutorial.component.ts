@@ -29,4 +29,13 @@ export class AddTutorialComponent implements OnInit {
       error: (e) => console.error(e)
     });
   }
+
+  newTutorial(): void {
+    this.submitted = false;
+    this.tutorial = {
+      title: '', 
+      description: '', 
+      published: false
+    };
+  }
 }
